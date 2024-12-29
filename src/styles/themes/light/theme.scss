@@ -1,0 +1,65 @@
+/* brand */
+$yellow: #ffe700;
+$light-blue: #27aae1;
+$dark-blue: #0e406a;
+
+/* functional */
+$golden-rod: #ffc429;
+$golden-rod-30a: #ffedbf;
+$golden-rod-10a: #fff9ea;
+
+$red: #d4353f;
+$red-30a: #f2c2c5;
+$red-10a: #fbebec;
+
+$green: #058e2c;
+$green-30a: #b4ddc0;
+$green-10a: #e6f4ea;
+
+$day-blue: #bee6f6;
+$day-blue-50a: #ddf5ff;
+$day-blue-30a: #ecf8fc;
+$day-blue-10a: #f8fcfe;
+
+/* Background */
+$white: #fff;
+$marble: #efeeef;
+$black-blue: #072238;
+$grey: #757679;
+$grey-50a: #b1b3b4;
+
+$primaryColor: $golden-rod; // primary color
+$primaryLightColor: lighten($primaryColor, 10%);
+$primaryDarkColor: darken($primaryColor, 10%); // hover
+$primaryDarkerColor: darken($primaryColor, 20%); // pressed
+$primaryTextColor: #fff;  // text color
+
+$secondaryColor: $dark-blue !default; // secondary color
+$secondaryLightColor: lighten($secondaryColor, 30%) !default; 
+$secondaryDarkColor: $black-blue !default; // hover
+$secondaryDarkerColor: $black-blue !default; // pressed
+$secondaryTextColor: #fff !default; // text color
+
+$accentColor: #f6f2ee !default;
+
+$highlightBg: darken($accentColor, 1%) !default;
+$highlightTextColor: $primaryDarkerColor !default;
+$highlightFocusBg: rgba(#F0512A, 0.24) !default;
+
+$warningColor: #FFCD00 !default;
+$warningLightColor: lighten($warningColor, 10%);
+$warningDarkColor: darken($warningColor, 10%); // hover
+$warningDarkerColor: darken($warningColor, 20%); // pressed
+$warningTextColor: #fff !default;
+
+$successColor: #22c55e !default;
+$infoColor: #2196F3 !default;
+$dangerColor: #F44336 !default;
+
+@import "./../../prime.scss";
+@import './_variables';
+@import './_fonts';
+@import './../../theme-base/_components';
+@import './_extensions';
+@import "./../../normalize.scss";
+

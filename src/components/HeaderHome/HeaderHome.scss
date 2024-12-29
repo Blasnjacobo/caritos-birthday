@@ -1,0 +1,195 @@
+$break-point-header-md: 768px;
+$break-point-header-lg: 1052px;
+
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@mixin item {
+    cursor: pointer;
+    user-select: none;
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+
+        &.active {
+            color: var(--day-blue);
+        }
+    }
+
+    &:hover {
+        color: var(--day-blue);
+    }
+}
+
+@import 'primeflex/primeflex.scss';
+
+.headerHome {
+    height: 5rem;
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 1rem;
+    &__logo {
+        img {
+            max-width: 6rem;
+        }
+    }
+
+    .p-button-outlined {
+        background-color: white;
+    }
+
+
+    @media (min-width: $break-point-header-lg) {
+        height: 7rem;
+        padding: 0 2rem;
+    }
+
+    @media (min-width: $break-point-header-lg) {
+        height: 7rem;
+        padding-left: 7.5rem;
+        padding-right: 10rem;
+    }
+
+    >* {
+        grid-row: 1/2;
+        @include flex_center()
+    }
+
+    &__menu {
+        grid-column: 12/13;
+        color: var(--white);
+
+        span {
+            font-size: 1.5rem;
+        }
+
+        @media (min-width: $break-point-header-lg) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        grid-column: 1/2;
+    }
+
+    &__nav {
+        display: none;
+
+        @media (min-width: $break-point-header-lg) {
+            color: var(--white);
+            grid-column: 2/12;
+            margin-left: 3.5rem;
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+
+    &__item {
+        @include item()
+    }
+
+    &__end {
+        display: none;
+
+        @media (min-width: $break-point-header-lg) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 2rem;
+            min-width: 12rem;
+            font-size: 1.5rem;
+
+            i {
+                color: var(--white);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.iconMenu {
+    position: relative;
+
+    &__notification {
+        font-size: 10px;
+        position: absolute;
+        z-index: 10;
+        top: 0.75rem;
+        right: 0.75rem;
+        color: var(--golden-rod);
+    }
+}
+
+.sidebarHome {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    min-width: 18.5rem;
+
+
+    & h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    & p {
+        margin: 0;
+        margin-bottom: 0;
+    }
+
+    .p-sidebar-content,
+    .p-sidebar-header {
+        padding: 0;
+    }
+
+    &__header {
+        margin-bottom: 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+            font-size: 1.5rem;
+        }
+
+        & span {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__content {
+        height: 100%;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        @include item()
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 2;
+    }
+}

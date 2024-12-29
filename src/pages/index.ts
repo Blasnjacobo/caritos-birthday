@@ -1,0 +1,5 @@
+export { default as Dashboard } from "./dashboard"
+export { default as Memories } from "./memories"
+export { default as Felicitaciones } from "./felicitaciones"
+export { default as BetweenUs } from "./betweenUs"
+export { default as HuntingTreasure } from "./huntingTreasure"

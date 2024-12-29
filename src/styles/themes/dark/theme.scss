@@ -1,0 +1,28 @@
+$primaryColor: #f0512a !default;
+$primaryLightColor: lighten(#f0512a, 10%) !default;
+$primaryLighterColor: darken(#f0512a, 10%) !default; // hover
+$primaryLightestColor: darken(#f0512a, 20%) !default; // pressed
+$primaryTextColor: #ffffff !default;
+
+$secondaryColor: #192e59 !default; // secondary color
+$secondaryDarkColor: lighten($secondaryColor, 30%) !default;
+$secondaryLightColor: #2d5697 !default; // hover
+$secondaryLighterColor: #0d182f !default; // pressed
+$secondaryTextColor: #fff !default; // text color
+
+$accentColor: #f0522a36 !default;
+
+$highlightBg: darken($accentColor, 5%) !default;
+$highlightTextColor: rgba(255, 255, 255, 0.87) !default;
+$highlightFocusBg: rgba($primaryColor, 0.24) !default;
+
+$successColor: #4ade80 !default;
+$infoColor: #38bdf8 !default;
+$warningColor: #fb923c !default;
+$dangerColor: #f87171 !default;
+
+@import '../../../prime.scss';
+@import '../_variables';
+@import './_fonts';
+@import '../../../theme-base/_components';
+@import './_extensions';

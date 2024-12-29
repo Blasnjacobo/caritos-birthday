@@ -1,0 +1,148 @@
+// font weight
+@mixin extrabold {
+  font-weight: 800;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin semibold {
+  font-weight: 600;
+}
+
+@mixin medium {
+  font-weight: 500;
+}
+
+@mixin regular {
+  font-weight: 400;
+}
+
+@mixin light {
+  font-weight: 300;
+}
+
+@mixin thin {
+  font-weight: 200;
+}
+
+@mixin extrathin {
+  font-weight: 100;
+}
+
+// heroes
+.hero__xl {
+  font-size: 3.5rem; // 56px
+  line-height: 110%; /* 61.6px */
+  letter-spacing: -1.12px;
+  @include semibold();
+}
+
+.hero__lg {
+  font-size: 3rem; // 48px
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+  @include semibold();
+}
+
+// header
+.h__lg {
+  font-size: 3rem; // 48px
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+  @include semibold();
+}
+
+.h__md {
+  font-size: 2rem; // 32px
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+  @include semibold();
+}
+
+.h__sm {
+  font-size: 1.25rem; // 20px
+  line-height: 130%; /* 26px */
+  @include semibold();
+}
+
+.h__xs {
+  font-size: 1rem; // 16px
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.5px;
+  @include semibold();
+}
+
+.h__xxs {
+  font-size: 1rem; // 16px
+  line-height: 1.4; // 140%
+  @include semibold();
+}
+
+// paragraph
+.p__xl {
+  font-size: 1.125rem; // 18px
+  line-height: 140%; /* 25.2px */
+  font-family: 'Inter', sans-serif;
+  @include regular();
+}
+
+.p__lg {
+  font-size: 1rem; // 16px
+  line-height: 120%; /* 19.2px */
+  font-family: 'Inter', sans-serif;
+  @include regular();
+}
+
+.p__lg--bold {
+  @extend .p__lg;
+  @include semibold();
+}
+
+.p__sm {
+  font-size: 0.875rem; // 14px
+  line-height: 140%;
+  font-family: 'Inter', sans-serif;
+  @include regular();
+}
+
+.p__sm--bold {
+  @extend .p__sm;
+  @include semibold();
+}
+
+.p__sm--underline {
+  @extend .p__sm;
+  text-decoration: underline;
+}
+
+.p__sm-underline--bold {
+  @extend .p__sm--bold;
+  text-decoration: underline;
+}
+
+.micro {
+  font-size: 0.75rem; // 12px
+  line-height: 140%;
+  font-family: 'Inter', sans-serif;
+  @include regular();
+}
+
+.micro__underline--bold {
+  @extend .micro;
+  text-decoration: underline;
+  @include semibold();
+}
+
+.label {
+  font-size: 0.625rem; // 10px
+  line-height: 140%;
+  font-family: 'Inter', sans-serif;
+  @include regular();
+}
+
+.label--bold {
+  @extend .label;
+  @include bold();
+}
