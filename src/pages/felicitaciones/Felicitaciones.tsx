@@ -20,7 +20,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ name, videoUrl, poster, gender })
   };
 
   // Define the name color based on gender
-  const nameColorClass = gender === 'female' ? 'text-pink-500' : 'text-blue-500';
+  const nameColorClass = gender === 'female' ? 'text-pink-500' : gender === 'male' ? 'text-blue-500' : 'text-black-500';
 
   return (
     <Card className="overflow-hidden col-12 p-0 my-5 md:col-4 md:my-2" pt={pt}>

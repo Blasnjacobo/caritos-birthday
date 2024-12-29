@@ -5,7 +5,7 @@ export interface Person {
   videoUrl: string;
   sentence: string;
   poster: string;
-  gender: 'male' | 'female';
+  gender: 'male' | 'female' | 'both';
 }
 
 interface CategoryData {
@@ -14,7 +14,42 @@ interface CategoryData {
 
 export const data: CategoryData = {
   "family": [
-   
+    {
+      name: "Ale & Claudio",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/ale&Claudio/Ale&Claudio__video.MP4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/ale%26Claudio/Ale%26Claudio__foto.jpg",
+      gender: "both"
+    },
+    {
+      name: "Señora Sandra",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__video.mp4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Rosally",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/rosally/Rosally__video.mp4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/rosally/rosally__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Alexa",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa/alexa__video.mp4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa/alexa__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Doña Rosita",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__video.mp4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__foto.jpg",
+      gender: "female"
+    },
+
   ],
   "friends": [
     {
@@ -36,6 +71,27 @@ export const data: CategoryData = {
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/karla/karla__video.mp4",
       sentence: "Felices 26, Blasito!",
       poster: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/karla/karla__foto.jpg?raw=true",
+      gender: "female"
+    },
+    {
+      name: "Atenas",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/atenas/atenas__video.MP4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/atenas/atenas__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Anahí",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/anahi/Anahi__video.MP4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/anahi/anahi__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Daniela",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/daniela/Daniela__video.mp4",
+      sentence: "Felices 26, Blasito!",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/daniela/daniela__foto.jpg",
       gender: "female"
     },
     {
@@ -78,7 +134,7 @@ export const data: CategoryData = {
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/Naila&Marco/Naila&Mayco__video.mp4",
       sentence: "Felices 26, Blasito!",
       poster: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/Naila&Marco/Naila&Marco__foto.jpg?raw=true",
-      gender: "female"
+      gender: "both"
     },
     {
       name: "Gerardo",
