@@ -1,7 +1,6 @@
 // useMemories.ts
 import { useState, useEffect, SetStateAction } from 'react';
-import { PhotoService } from '../services/PhotoService';
-import { CategoryGallery } from '@services/PhotoService';
+import { PhotoService, CategoryGallery } from '../services/PhotoService';
 
 export const useMemories = () => {
     const [galleries, setGalleries] = useState<CategoryGallery[]>([]);

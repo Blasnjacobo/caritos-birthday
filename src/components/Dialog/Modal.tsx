@@ -1,4 +1,4 @@
-import { Dialog } from '@components/Prime';
+import { Dialog } from './../../components/Prime';
 
 import { ReactNode } from 'react';
 import './Modal.scss';
