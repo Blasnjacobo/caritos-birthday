@@ -1,4 +1,4 @@
-import {Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import {
   Dashboard,
   Memories,
@@ -10,15 +10,15 @@ import HeaderHomeLayout from './layout/HeaderHomeLayout';
 
 const App = () => {
   return (
-      <Routes>
-        <Route path='/caritos-birthday' element={<HeaderHomeLayout />}>
-          <Route path="/caritos-birthday" element={<Dashboard />} />
-          <Route path='/caritos-birthday/memories' element={<Memories />} />
-          <Route path='/caritos-birthday/felicitaciones' element={<Felicitaciones />} />
-          <Route path='/caritos-birthday/betweenUs' element={<BetweenUs />} />
-          <Route path='/caritos-birthday/betweenUs/huntingTreasure' element={<HuntingTreasure />} />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path='/' element={<HeaderHomeLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path='/memories' element={<Memories />} />
+        <Route path='/felicitaciones' element={<Felicitaciones />} />
+        <Route path='/betweenUs' element={<BetweenUs />} />
+        <Route path='/betweenUs/huntingTreasure' element={<HuntingTreasure />} />
+      </Route>
+    </Routes>
   );
 };
 
