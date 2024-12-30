@@ -8,11 +8,13 @@ import {
   Story
 } from './pages/index';
 import HeaderHomeLayout from './layout/HeaderHomeLayout';
+import { useState } from 'react';
 
 const App = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
   return (
     <Routes>
-      <Route path='/' element={<HeaderHomeLayout />}>
+      <Route path='/' element={<HeaderHomeLayout setShowSidebar={setShowSidebar} showSidebar={showSidebar} />}>
         <Route index element={<Dashboard />} />
         <Route path='/memories' element={<Memories />} />
         <Route path='/felicitaciones' element={<Felicitaciones />} />

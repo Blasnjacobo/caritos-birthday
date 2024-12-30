@@ -1,7 +1,7 @@
 import './HeaderHome.scss'
 import { Sidebar } from 'primereact/sidebar'
 import Logo from './../../assets/icons/carito-jpg.svg'
-import { FC, useState, useEffect } from 'react'
+import { FC, useState, useEffect, Dispatch, SetStateAction } from 'react'
 import { Button } from 'primereact/button';
 import { classNames } from 'primereact/utils';
 import { NavLink, useNavigate } from 'react-router-dom';
@@ -41,6 +41,8 @@ interface HeaderHomeProps {
     onClickNotifications: () => void;
     positionSidebar?: "right" | "top" | "bottom" | "left"
     handleProfileRedirection?: () => void;
+    setShowSidebar: Dispatch<SetStateAction<boolean>>;
+    showSidebar: boolean
 }
 
 export const HeaderHome: FC<HeaderHomeProps> = ({
@@ -143,6 +145,7 @@ export const HeaderHome: FC<HeaderHomeProps> = ({
                                 <NavLink 
                                     to={path} 
                                     className={({ isActive }) => isActive ? 'active' : ''}
+                                    onClick={() => setShowSidebar(false)}
                                 >
                                     {label}
                                 </NavLink>

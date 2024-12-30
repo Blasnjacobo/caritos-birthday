@@ -1,5 +1,5 @@
 import PwaHeaderHome, { ItemsNavbar } from './../../components/HeaderHome';
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import { Outlet } from "react-router-dom";
 
 const items: ItemsNavbar[] = [
@@ -15,7 +15,12 @@ const items: ItemsNavbar[] = [
     }
 ];
 
-export const HeaderHomeLayout = () => {
+interface HeaderHomeProps {
+    setShowSidebar: Dispatch<SetStateAction<boolean>>;
+    showSidebar: boolean
+}
+
+export const HeaderHomeLayout = ({showSidebar, setShowSidebar}: HeaderHomeProps) => {
     const [darkMode, setDarkMode] = useState(false);
 
     return (
@@ -30,6 +35,8 @@ export const HeaderHomeLayout = () => {
                 onClickLogout={() => console.log("onClickLogout")}
                 onClickNotifications={() => console.log("onClickNotifications")}
                 positionSidebar='right'
+                showSidebar={showSidebar}
+                setShowSidebar={setShowSidebar}
             />
             <Outlet />
         </main>
