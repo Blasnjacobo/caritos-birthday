@@ -13,43 +13,14 @@ interface CategoryData {
 }
 
 export const data: CategoryData = {
-  "familia Carito/Blas": [
+  "familia Nuclear": [
     {
       name: "Ale & Claudio",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/ale&Claudio/Ale&Claudio__video.MP4",
       sentence: "Hermana y Cuñado, nueva familia de Blasito, buenas personas.",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/ale%26Claudio/Ale%26Claudio__foto.jpg",
       gender: "both"
-    },
-    {
-      name: "Señora Sandra",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__video.mp4",
-      sentence: "Suegra, buena gente con Carito",
-      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__foto.jpg",
-      gender: "female"
-    },
-    {
-      name: "Rosally",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/rosally/Rosally__video.mp4",
-      sentence: "Cuñada, gemela de Blasito, y amiga de carito antes de que conociera a Blas",
-      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/rosally/rosally__foto.jpg",
-      gender: "female"
-    },
-    {
-      name: "Alexa",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa/alexa__video.mp4",
-      sentence: "Sobrina hermosa, preciosa, i love you, si ves esto Alexa, vales mil, aunque un poco forzado ese video, pero quiere a Caro.",
-      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa/alexa__foto.jpg",
-      gender: "female"
-    },
-    {
-      name: "Doña Rosita",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__video.mp4",
-      sentence: "Abuelita Blas, vio que andaban sacando videos para carito y quizo participar.",
-      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__foto.jpg",
-      gender: "female"
-    },
-
+    }
   ],
   "Amigos": [
     {
@@ -178,5 +149,36 @@ export const data: CategoryData = {
       poster: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/nancy/nancy__foto.jpg?raw=true",
       gender: "female"
     }
-  ]
+  ],
+  "familia Blas": [
+    {
+      name: "Señora Sandra",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__video.mp4",
+      sentence: "Suegra, buena gente con Carito",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Rosally",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/rosally/Rosally__video.mp4",
+      sentence: "Cuñada, gemela de Blasito, y amiga de carito antes de que conociera a Blas",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/rosally/rosally__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Alexa",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa/alexa__video.mp4",
+      sentence: "Sobrina hermosa, preciosa, i love you, si ves esto Alexa, vales mil, aunque un poco forzado ese video, pero quiere a Caro.",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa/alexa__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Doña Rosita",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__video.mp4",
+      sentence: "Abuelita Blas, vio que andaban sacando videos para carito y quizo participar.",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/donaRosita/donaRosita__foto.jpg",
+      gender: "female"
+    },
+
+  ],
 };
