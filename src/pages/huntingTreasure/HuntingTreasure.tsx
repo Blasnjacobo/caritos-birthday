@@ -69,6 +69,10 @@ const HuntingTreasure = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [error, setError] = useState<string>('');
 
+  const getTitleColor = (levelIndex: number) => {
+    return levelIndex % 2 === 0 ? 'text-yellow-500' : 'text-blue-500';
+  };
+
   const handlePasswordSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     
@@ -143,7 +147,9 @@ const HuntingTreasure = () => {
         <h2 className="text-2xl font-bold text-center mb-4">Hunting Treasure</h2>
         <section className="max-w-lg mx-auto">
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4">{currentChallenge.title}</h3>
+            <h3 className={`text-xl font-semibold mb-4 ${getTitleColor(currentLevel)}`}>
+              {currentChallenge.title}
+            </h3>
             <video 
               className="w-full h-20rem object-cover mb-4 rounded"
               src={currentChallenge.videoUrl}
@@ -178,7 +184,7 @@ const HuntingTreasure = () => {
               />
             </form>
           </div>
-      </section>
+        </section>
       </section>
       <section>
         <p className="text-sm text-gray-600 text-center">
