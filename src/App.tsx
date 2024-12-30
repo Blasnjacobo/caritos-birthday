@@ -4,7 +4,8 @@ import {
   Memories,
   Felicitaciones,
   BetweenUs,
-  HuntingTreasure
+  HuntingTreasure,
+  Story
 } from './pages/index';
 import HeaderHomeLayout from './layout/HeaderHomeLayout';
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/felicitaciones' element={<Felicitaciones />} />
         <Route path='/betweenUs' element={<BetweenUs />} />
         <Route path='/betweenUs/huntingTreasure' element={<HuntingTreasure />} />
+        <Route path='/betweenUs/story' element={<Story />} />
       </Route>
     </Routes>
   );

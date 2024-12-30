@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom"
 const BetweenUs = () => {
     const navigate = useNavigate()
     const handleHunting = () => {
-        navigate("./huntingTreasure")
+        navigate("./huntingTreasure") // Remove the ./ to make it an absolute path
     }
 
     const handleStory = () => {
-        navigate("./story")
+        navigate("./story") // Remove the ./ to make it an absolute path
     }
 
   return (
