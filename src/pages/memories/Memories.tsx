@@ -3,6 +3,7 @@ import { LoaderModal } from "./../../components/index"
 import './memories.scss';
 import { useMemories } from './../../hooks/useMemories';
 import { CategoryGallery, ImageItem } from './../../services/PhotoService';
+import { Divider } from "./../../components/Prime";
 
 export default function Memories() {
     const { galleries, isLoading } = useMemories();
@@ -46,11 +47,11 @@ export default function Memories() {
                     text="En lo que se cargan las fotos deja decirte lo bella, bonita, hermosa que eres mi amor"
                 />
             ) : (
-                <div className="space-y-12">
+                <div className="my-8">
                     {galleries.map((gallery: CategoryGallery) => (
                         <section 
                             key={gallery.category}
-                            className="gallery-section mb-6"
+                            className="gallery-section my-8"
                         >
                             <div className="gallery-header mb-6">
                                 <h2 className="text-3xl font-bold mb-2 text-center">
@@ -74,6 +75,7 @@ export default function Memories() {
                                 thumbnail={thumbnailTemplate}
                                 className="rounded-xl overflow-hidden shadow-2xl"
                             />
+                            <Divider />
                         </section>
                     ))}
                 </div>

@@ -13,7 +13,7 @@ interface CategorySectionProps {
   items: Person[];
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({ name, videoUrl, poster, gender }) => {
+const VideoCard: React.FC<VideoCardProps> = ({ name, videoUrl, poster, gender, sentence }) => {
   const pt = {
     body: { className: 'p-0' },
     content: { className: 'p-0' }
@@ -25,13 +25,14 @@ const VideoCard: React.FC<VideoCardProps> = ({ name, videoUrl, poster, gender })
   return (
     <Card className="overflow-hidden col-12 p-0 my-5 md:col-4 md:my-2" pt={pt}>
       <video 
-        className="w-full h-20rem object-cover"
+        className="w-full h-20rem object-cover pt-3"
         src={videoUrl}
         controls
         poster={poster}
       />
       <div className="p-3 flex flex-column gap-3">
         <h3 className={`font-bold m-0 underline ${nameColorClass}`}>{name}</h3>
+        <p>{sentence}</p>
       </div>
     </Card>
   );
@@ -58,7 +59,7 @@ const Felicitaciones: React.FC = () => {
   const hideModal = () => setIsModalVisible(false);
   return (
     <div className="surface-100 Felicitaciones">
-      <div className="w-11 mx-auto">
+      <div className="w-10 mx-auto">
         {Object.entries(data).map(([category, items]) => (
           <CategorySection 
             key={category}
