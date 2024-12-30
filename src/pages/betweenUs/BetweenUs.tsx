@@ -11,13 +11,13 @@ const BetweenUs = () => {
                 label="Carito's hunting treasure" 
                 className="w-full h-full" 
                 severity="success" 
-                onClick={() => navigate('/hunting-treasure')} // Changed to direct navigation
+                onClick={() => navigate('./hunting-treasure')} // Added hash for HashRouter
             />
             <Button 
                 label="Story to my little girl" 
                 className="w-full h-full" 
                 severity="info" 
-                onClick={() => navigate('/story')} // Changed to direct navigation
+                onClick={() => navigate('./story')} // Added hash for HashRouter
             />
         </main>
     )

@@ -59,6 +59,8 @@ export const HeaderHome: FC<HeaderHomeProps> = ({
     useEffect(() => {
         if (value === "Carito.31") {
             navigate("/betweenUs");
+            setValue(''); // Clear the password after navigation
+            setShowSidebar(false)
         }
     }, [value, navigate]);
 
