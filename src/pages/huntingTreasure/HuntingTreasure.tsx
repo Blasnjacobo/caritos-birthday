@@ -24,7 +24,7 @@ const treasureHuntData: TreasureLevel[] = [
     title: "Primer regalito",
     description: "Pon acá la respuesta",
     password: "album",
-    videoUrl: test,
+    videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/huntingTreasure/videos/regalo1.MOV",
     poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo1.jpg",
     hint: "Remember that special spring day...",
     unlockedMessage: "¡Muy bien amor! Here's your first gift clue..."
@@ -34,7 +34,7 @@ const treasureHuntData: TreasureLevel[] = [
     title: "Segundo regalitoooo, el primero un album para tus foooooootos, nada mal",
     description: "Escribe tu respuesta aqui bebe",
     password: "monedero",
-    videoUrl: test,
+    videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/huntingTreasure/videos/regalo2.MOV",
     poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo2.jpg",
     hint: "Think cold and sweet...",
     unlockedMessage: "¡Excelente! You're getting closer to your gifts..."
@@ -44,7 +44,7 @@ const treasureHuntData: TreasureLevel[] = [
     title: "Regalo 3: uh la la, un monedero eeeeeeeeh, que será el siguiente?",
     description: "Te está gustando esto? respuesta aquí",
     password: "anillo",
-    videoUrl: test,
+    videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/huntingTreasure/videos/regalo3.MOV",
     poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo3.jpg",
     hint: "Think cold and sweet...",
     unlockedMessage: "¡Excelente! You're getting closer to your gifts..."
@@ -54,7 +54,7 @@ const treasureHuntData: TreasureLevel[] = [
     title: "Último regalo mi amorcitooo, que consentida eh",
     description: "Pon tu última respuesta amooor",
     password: "tenis",
-    videoUrl: test,
+    videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/huntingTreasure/videos/regalo4.MOV",
     poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo4.jpg",
     hint: "Under the stars...",
     unlockedMessage: "¡Felicitaciones! You've unlocked all your birthday gifts!"
