@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FloatLabel, InputText, Button } from './../../components/Prime';
 import test from "./../../assets/videos/test.mp4"
-import blas from "./../../assets/images/blas-hoy.jpg"
 import HuntingTreasureImage from './../../assets/images/hunting-treasure.jpg';
 
 interface TreasureLevel {
@@ -22,31 +21,41 @@ interface Attempts {
 const treasureHuntData: TreasureLevel[] = [
   {
     id: 1,
-    title: "First Clue",
-    description: "What was the date of ",
-    password: "1503",
+    title: "Primer regalito",
+    description: "Pon acá la respuesta",
+    password: "album",
     videoUrl: test,
-    poster: blas,
+    poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo1.jpg",
     hint: "Remember that special spring day...",
     unlockedMessage: "¡Muy bien amor! Here's your first gift clue..."
   },
   {
     id: 2,
-    title: "Second Challenge",
-    description: "What's my favorite ice cream flavor?",
-    password: "chocolate",
+    title: "Segundo regalitoooo, el primero un album para tus foooooootos, nada mal",
+    description: "Escribe tu respuesta aqui bebe",
+    password: "monedero",
     videoUrl: test,
-    poster: blas,
+    poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo2.jpg",
     hint: "Think cold and sweet...",
     unlockedMessage: "¡Excelente! You're getting closer to your gifts..."
   },
   {
     id: 3,
-    title: "Final Mystery",
-    description: "Where was our first kiss?",
-    password: "park",
+    title: "Regalo 3: uh la la, un monedero eeeeeeeeh, que será el siguiente?",
+    description: "Te está gustando esto? respuesta aquí",
+    password: "anillo",
     videoUrl: test,
-    poster: blas,
+    poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo3.jpg",
+    hint: "Think cold and sweet...",
+    unlockedMessage: "¡Excelente! You're getting closer to your gifts..."
+  },
+  {
+    id: 4,
+    title: "Último regalo mi amorcitooo, que consentida eh",
+    description: "Pon tu última respuesta amooor",
+    password: "tenis",
+    videoUrl: test,
+    poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/huntingTreasure/imagenes/regalo4.jpg",
     hint: "Under the stars...",
     unlockedMessage: "¡Felicitaciones! You've unlocked all your birthday gifts!"
   }
@@ -70,7 +79,7 @@ const HuntingTreasure = () => {
       setError('');
       setShowHint(false);
     } else {
-      setError('Incorrect password, try again!');
+      setError('ooop, creo que mi niña se equivocó, intentalo de nuevo!');
       setAttempts(prev => ({
         ...prev,
         [currentLevel]: (prev[currentLevel] || 0) + 1
@@ -109,8 +118,18 @@ const HuntingTreasure = () => {
     return (
       <main className="p-4">
         <h2 className="text-2xl font-bold text-center mb-4">¡Feliz Cumpleaños!</h2>
-        <div className="max-w-lg mx-auto text-center">
-          <p className="mb-4">You've completed all the challenges!</p>
+        <div className="max-w-lg mx-auto text-center flex flex-column gap-4">
+          <p className="mb-4">Acabas de terminar esta dinamica que tenia preparado para ti amor, espero la hayas pasado bomba como yo la estoy pasando al hacerlo!</p>
+          <img 
+            src="https://i.giphy.com/D6Bd9o4unoP1tW8rP1.webp" 
+            alt="gif ganador"
+            className="w-full h-20rem"
+          />
+          <img 
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2c3ODkzY3IwMnQ5dHpvNWlqYXRtb2FveHJhY3B5dDh0NWdnN3lseCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ItYBBtRi2DQJxwJYKQ/giphy.webp" 
+            alt="gif bailador"
+            className="w-full h-20rem"
+          />
         </div>
       </main>
     );
@@ -126,7 +145,7 @@ const HuntingTreasure = () => {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4">{currentChallenge.title}</h3>
             <video 
-              className="w-full h-48 object-cover mb-4 rounded"
+              className="w-full h-20rem object-cover mb-4 rounded"
               src={currentChallenge.videoUrl}
               controls
               poster={currentChallenge.poster}
