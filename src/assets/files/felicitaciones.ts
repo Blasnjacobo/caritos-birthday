@@ -16,7 +16,7 @@ export const data: CategoryData = {
   "familia": [
     {
       name: "Mamá y Papá",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/papas/papas__video.mp4",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/papas/papas__video.mp4",
       sentence: "Tus personas favoritas en el mundo mundial",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/papas/papas__foto.jpg",
       gender: "both"
@@ -51,7 +51,7 @@ export const data: CategoryData = {
     },
     {
       name: "Prima Sofia",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/Sofia/sofia__video.mp4",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/Sofia/sofia__video.mp4",
       sentence: "Hija de tia Marbey, espero conocerlos pronto",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/Sofia/sofia__foto.jpg",
       gender: "female"
@@ -203,7 +203,7 @@ export const data: CategoryData = {
     {
       name: "Señora Sandra",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__video.mp4",
-      sentence: "Suegra, buena gente con Carito",
+      sentence: "Suegris y amiga de carito, mucho cariño mutuo, claro que yes.",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/senoraSandra/senoraSandra__foto.jpg",
       gender: "female"
     },
@@ -218,7 +218,7 @@ export const data: CategoryData = {
       name: "Alexa&Cristal&Mayco",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa&Cristal&Mayco/Alexa&Cristal&Mayco__video.mp4",
       sentence: "Sobrina hermosa, preciosa, i love you, si ves esto Alexa, vales mil, junto con Cristal y Mayco que ya te agarraron mucho cariño.",
-      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa/alexa__foto.jpg",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa%26Cristal%26Mayco/Alexa%26Crital%26Mayco__foto.jpg",
       gender: "both"
     },
     {
