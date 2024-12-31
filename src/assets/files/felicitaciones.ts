@@ -18,7 +18,7 @@ export const data: CategoryData = {
       name: "Mamá y Papá",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/papas/papas__video.mp4",
       sentence: "Tus personas favoritas en el mundo mundial",
-      poster: "",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/papas/papas__foto.jpg",
       gender: "both"
     },
     {
@@ -29,37 +29,37 @@ export const data: CategoryData = {
       gender: "both"
     },
     {
-      name: "Familia de Tia Marbey",
+      name: "Familia Martinez Altuzar",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/familiaMarbey/FamiliaMarbey__video.mp4",
       sentence: "Tanto tú como tus papás quieren mucho mucho a esta bonita familia",
-      poster: "",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/familiaMarbey/FamiliaMarbey__foto.jpg",
       gender: "both"
     },
     {
-      name: "Tia Carmen, tio Felipe & Natalia",
+      name: "Familia Martinez Camacho",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/tiosCarmenFelipe&Natalia/TiosCarmenFelipe&Natalia__video.mp4",
       sentence: "Pero queeeee bonita familia y video, no los conozco pero me dieron ganas de conocerlos y cantar con el piano.",
-      poster: "",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/tiosCarmenFelipe%26Natalia/TiosCarmenFelipe%26Natalia__foto.jpg",
       gender: "both"
     },
     {
       name: "Primo Miguel Ángel",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/primoMiguelAngel/primoMiguelAngel__video.mp4",
       sentence: "Desde aqui se nota que te quiere mucho tu primo <3",
-      poster: "",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/primoMiguelAngel/PrimoMiguelAngel__foto.jpg",
       gender: "male"
     },
     {
       name: "Prima Sofia",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/Sofia/sofia__video.mp4",
       sentence: "Hija de tia Marbey, espero conocerlos pronto",
-      poster: "",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/Sofia/sofia__foto.jpg",
       gender: "female"
     },
     {
       name: "Claudio",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/Claudio/Claudio__video.mp4",
-      sentence: "Hija de tia Marbey, espero conocerlos pronto",
+      sentence: "Cuñado, muy querido por la familia, agradable sujeto",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/ale%26Claudio/Ale%26Claudio__foto.jpg",
       gender: "male"
     },
