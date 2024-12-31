@@ -13,14 +13,56 @@ interface CategoryData {
 }
 
 export const data: CategoryData = {
-  "familia Nuclear": [
+  "familia": [
+    {
+      name: "Mamá y Papá",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/papas/papas__video.mp4",
+      sentence: "Tus personas favoritas en el mundo mundial",
+      poster: "",
+      gender: "both"
+    },
     {
       name: "Ale & Claudio",
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/ale&Claudio/Ale&Claudio__video.MP4",
       sentence: "Hermana y Cuñado, nueva familia de Blasito, buenas personas.",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/ale%26Claudio/Ale%26Claudio__foto.jpg",
       gender: "both"
-    }
+    },
+    {
+      name: "Familia de Tia Marbey",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/familiaMarbey/FamiliaMarbey__video.mp4",
+      sentence: "Tanto tú como tus papás quieren mucho mucho a esta bonita familia",
+      poster: "",
+      gender: "both"
+    },
+    {
+      name: "Tia Carmen, tio Felipe & Natalia",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/tiosCarmenFelipe&Natalia/TiosCarmenFelipe&Natalia__video.mp4",
+      sentence: "Pero queeeee bonita familia y video, no los conozco pero me dieron ganas de conocerlos y cantar con el piano.",
+      poster: "",
+      gender: "both"
+    },
+    {
+      name: "Primo Miguel Ángel",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/primoMiguelAngel/primoMiguelAngel__video.mp4",
+      sentence: "Desde aqui se nota que te quiere mucho tu primo <3",
+      poster: "",
+      gender: "male"
+    },
+    {
+      name: "Prima Sofia",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/blob/main/src/data/felicitaciones/Sofia/sofia__video.mp4",
+      sentence: "Hija de tia Marbey, espero conocerlos pronto",
+      poster: "",
+      gender: "female"
+    },
+    {
+      name: "Claudio",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/Claudio/Claudio__video.mp4",
+      sentence: "Hija de tia Marbey, espero conocerlos pronto",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/ale%26Claudio/Ale%26Claudio__foto.jpg",
+      gender: "male"
+    },
   ],
   "Amigos": [
     {
@@ -56,6 +98,13 @@ export const data: CategoryData = {
       videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/anahi/Anahi__video.MP4",
       sentence: "Cuya, emprendedora, y hay bodorrio en diciembre",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/anahi/anahi__foto.jpg",
+      gender: "female"
+    },
+    {
+      name: "Geovani",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/geovani/geovani__video.mp4",
+      sentence: "Cuyita Influencer, se tiene mucho amor mutuo, de las mejores amigas",
+      poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/geovani/geovani__foto.jpg",
       gender: "female"
     },
     {
@@ -166,11 +215,11 @@ export const data: CategoryData = {
       gender: "female"
     },
     {
-      name: "Alexa",
-      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa/alexa__video.mp4",
-      sentence: "Sobrina hermosa, preciosa, i love you, si ves esto Alexa, vales mil, aunque un poco forzado ese video, pero quiere a Caro.",
+      name: "Alexa&Cristal&Mayco",
+      videoUrl: "https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/felicitaciones/alexa&Cristal&Mayco/Alexa&Cristal&Mayco__video.mp4",
+      sentence: "Sobrina hermosa, preciosa, i love you, si ves esto Alexa, vales mil, junto con Cristal y Mayco que ya te agarraron mucho cariño.",
       poster: "https://raw.githubusercontent.com/Blasnjacobo/loteria-personalizada/refs/heads/main/src/data/felicitaciones/alexa/alexa__foto.jpg",
-      gender: "female"
+      gender: "both"
     },
     {
       name: "Doña Rosita",
