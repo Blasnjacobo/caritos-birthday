@@ -31,7 +31,7 @@ const Dashboard = () => {
       </section>
       <Dialog visible={isModalVisible} onHide={hideModal} dismissableMask header="Hola, felices 26 amor...">
       <video
-          src='https://ik.imagekit.io/ikmedia/example_video.mp4'
+          src='https://github.com/Blasnjacobo/loteria-personalizada/raw/refs/heads/main/src/data/welcome.MOV'
           controls
           autoPlay
           className="w-full"
